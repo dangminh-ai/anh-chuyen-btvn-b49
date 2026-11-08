@@ -183,7 +183,7 @@ textarea#note:focus{outline:none;box-shadow:inset 2px 2px 0 #b5b5b5,0 0 0 3px va
 <div class="cloud c2" aria-hidden="true"></div>
 <div class="cloud c3" aria-hidden="true"></div>
 <div class="hero-in">
-<p class="eyebrow">Anh Nâng Cao 1, BTVN buổi 49</p>
+<p class="eyebrow">Anh Chuyên, BTVN buổi 49</p>
 <h1>Câu hỏi Yes/No và câu hỏi Wh-</h1>
 <p class="sub">50 câu gồm trắc nghiệm, xác định lỗi sai, điền từ và viết lại câu. Nộp bài chỉ báo câu nào sai, em sửa lại và nộp lại bao nhiêu lần tùy thích.</p>
 <div class="prow" aria-hidden="true">
@@ -763,7 +763,7 @@ function body(e,name,teacher){
 var g=grade(e.ans),list=mine(name),o=[];
 o.push("Học sinh: "+name);
 o.push("Lần làm: "+e.r+", nộp lần "+e.s);
-o.push("Đề: Anh Nâng Cao 1, BTVN buổi 49: Câu hỏi Yes/No và câu hỏi Wh-");
+o.push("Đề: Anh Chuyên, BTVN buổi 49: Câu hỏi Yes/No và câu hỏi Wh-");
 o.push("Điểm: "+e.sc+" / "+e.tot+" ("+EXAM.parts.map(function(p){return "Phần "+p.id+": "+g.p[p.id].s+"/"+g.p[p.id].t;}).join(", ")+")");
 o.push("Câu sai ở lần nộp này: "+(e.wrong.length?e.wrong.join(", "):"không có"));
 if(e.s>1)o.push("Câu học sinh đã sửa đúng so với lần nộp trước: "+(e.fixed&&e.fixed.length?e.fixed.join(", "):"không có"));
